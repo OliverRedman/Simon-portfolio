@@ -168,7 +168,6 @@ h1 {
 /* -----------ABOUT ME PAGE------------------------ */
 .about-me {
   color: #373737;
-  background-color: ;
 }
 
 h2:after {
@@ -203,7 +202,7 @@ h2 {
   align-self: flex-start;
 }
 
-.about-writing {
+.about-writing p {
   font-size: 110%;
   font-weight: 300;
   justify-content: center;
