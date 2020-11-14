@@ -19,11 +19,11 @@
   }
 
   .about-writing p {
-    font-size: 125%;
+    font-size: 135%;
     line-height: 35px;
-    word-spacing: 2px;
+    word-spacing: 1px;
     padding-right: 10%;
-    font-weight: 300;
+    font-weight: 400;
   }
 
 .nutt-text p {
