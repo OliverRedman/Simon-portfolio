@@ -281,7 +281,7 @@ text-align:center;
     opacity: 0;
     transition: opacity 0.6s;
     vertical-align: middle;
-    line-height: 30px;
+    line-height: 20px;
     z-index: 999;
     cursor: pointer;
     padding-left: 8px;
@@ -294,11 +294,14 @@ text-align:center;
     line-height: 100%;
     padding-bottom: 40px;
     padding-top: 15px;
+    letter-spacing: 0.05em;
+
+
   }
   .nutt-text p {
     color: white;
-    vertical-align: baseline;
     line-height:20px;
+    padding-bottom: 10px;
   }
 .nutts,
 .image-grid {
@@ -334,6 +337,8 @@ text-align:center;
   line-height: 100%;
   padding-bottom: 15px;
   padding-top: 10px;
+  letter-spacing: 0.05em;
+
 }
 .nutt-gallery-text p {
   color: white;
@@ -341,6 +346,9 @@ text-align:center;
 .nutt-gallery-text:hover {
 opacity: 1;
 }
+
+
+
 /* -----------FLICKITY STYLNG------------------------ */
 .gallery-cell,
 .nutt-gallery-text {
