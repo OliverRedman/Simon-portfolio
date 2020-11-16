@@ -75,7 +75,18 @@
   .main__intro h1 {
     margin-top: 30%;
   }
+  .main__intro h1,
+  .main__intro p {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 auto;
+  }
 
+.about-writing p {
+  padding-right: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
   header {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/simonphone1.jpg);
