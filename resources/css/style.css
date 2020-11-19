@@ -18,7 +18,6 @@ body {
   font-family: 'lato', 'Arial', 'sans-serif';
   font-size: 110%;
   font-weight: 200;
-  text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
@@ -40,10 +39,12 @@ h1, h2, h3, h4 {
 
 /* -----------HERO BACKGROUND------------------------ */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero1.jpg);
-  background-size: cover;
-  min-height: 100vh;
-  background-attachment: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero1.jpg);
+   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero1.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero1.jpg);
+   background-size: cover;
+   min-height: 100vh;
+   background-attachment: fixed;
 }
 
 /* -----------NAV------------------------ */
@@ -62,7 +63,6 @@ li, a, button {
   padding: 10px;
   margin-left: 55%;
   margin-right: 6%;
-  position: flex;
 }
 
 .nav__links li {
@@ -101,7 +101,6 @@ li, a, button {
 
 .nav-icon button,
 ion-icon {
-  position: absolute: 5px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
@@ -190,20 +189,20 @@ h2 {
 
 .simon-about {
   width: 30%;
-  height: auto;
+  height: 30%;
   border-radius: 400px;
-  margin: 0px 0 20px 3%;
-  object-fit: contain
+  margin: 0px 0px 20px 3%;
+  object-fit: contain;
 }
-.about-content img {
 
-}
 
 .about-content {
   display: flex;
+  display: -webkit-flex;
   object-fit: contain;
   align-self: flex-start;
 }
+
 
 .about-writing p {
   font-size: 110%;

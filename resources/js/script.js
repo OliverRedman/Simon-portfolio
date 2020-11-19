@@ -1,19 +1,20 @@
 $(document).ready(function() {
 
 
-      // FOR THE NAV STICKY
-    $('.js--section-about').waypoint(function(direction) {
-      if (direction == 'down') {
-        $('nav').addClass('sticky');
-      } else {
-        $('nav').removeClass('sticky');
-      }
-    },{ offset: '60px'
+  // FOR THE NAV STICKY
+  $('.js--section-about').waypoint(function(direction) {
+    if (direction == 'down') {
+      $('nav').addClass('sticky');
+    } else {
+      $('nav').removeClass('sticky');
+    }
+  }, {
+    offset: '60px'
 
   });
 
-// buttons to ids
-  $(document).ready(function(){
+  // buttons to ids
+  $(document).ready(function() {
     $("a").on('click', function(event) {
 
       if (this.hash !== "") {
@@ -23,7 +24,7 @@ $(document).ready(function() {
 
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 900, function(){
+        }, 900, function() {
           window.location.hash = hash;
         });
       }
@@ -32,19 +33,19 @@ $(document).ready(function() {
 
   // animations on scroll
   $('.js--wp-1').waypoint(function(direction) {
-      $('.js--wp-1').addClass('animate__animated animate__fadeIn');
-    }, {
-      offset: '70%'
+    $('.js--wp-1').addClass('animate__animated animate__fadeIn');
+  }, {
+    offset: '70%'
   })
   $('.js--project-1').waypoint(function(direction) {
-      $('.js--project-1').addClass('animate__animated animate__fadeInUp');
-    }, {
-      offset: '50%'
+    $('.js--project-1').addClass('animate__animated animate__fadeInUp');
+  }, {
+    offset: '50%'
   })
   $('.js--project-2').waypoint(function(direction) {
-      $('.js--project-2').addClass('animate__animated animate__fadeIn');
-    }, {
-      offset: '75%'
+    $('.js--project-2').addClass('animate__animated animate__fadeIn');
+  }, {
+    offset: '75%'
   })
 
 });

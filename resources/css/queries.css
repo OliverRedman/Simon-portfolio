@@ -27,20 +27,24 @@
     color: #464646;
   }
 
-.nutt-text p {
-  font-weight: 300;
+  .nutt-text p {
+    font-weight: 300;
+  }
+
+  .oliver p {
+    font-weight: 300;
+    font-size: 22px
+  }
+
+  .contact-note {
+    font-size: 23px
+  }
+
+  .socials ion-icon {
+    font-size: 35px
+  }
 }
-.oliver p {
-  font-weight: 300;
-  font-size: 22px
-}
-.contact-note {
-  font-size: 23px
-}
-.socials ion-icon {
-font-size: 35px
-}
-}
+
 @media only screen and (max-width: 1250px) {
   .nav__links {
     display: none;
@@ -62,17 +66,12 @@ font-size: 35px
   .about-writing p {
     text-align: center;
     padding-right: 0px;
-
-
   }
-
 }
-
 
 @media only screen and (max-width: 575px) and (min-width: 1px) {
 
   /* nav bar */
-
   .nav__links {
     display: none;
   }
@@ -80,12 +79,13 @@ font-size: 35px
   /* opening page */
   h1 {
     font-size: 180%;
-     white-space: nowrap;
+    white-space: nowrap;
   }
 
   .main__intro h1 {
     margin-top: 30%;
   }
+
   .main__intro h1,
   .main__intro p {
     margin-left: 0;
@@ -93,15 +93,14 @@ font-size: 35px
     padding: 0 auto;
   }
 
-.about-writing p {
-  padding-right: 0px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
+  .about-writing p {
+    padding-right: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 
   header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/simonphone1.jpg);
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/simonphone1.jpg);
   }
 
   /* about section */
@@ -127,8 +126,8 @@ font-size: 35px
   .nutts,
   .nutt-text {
     display: none;
-
   }
+
   .project-h2 {
     margin-top: 15%;
     margin-bottom: 3%;
@@ -156,8 +155,9 @@ font-size: 35px
     counter-increment: gallery-cell;
     border: none;
   }
-  .cells img {
-  }
+
+  .cells img {}
+
   /* cell number */
   .gallery-cell:before {
     display: block;
@@ -168,9 +168,6 @@ font-size: 35px
   }
 
   /* FOOTER */
-  footer {
-    margin-bottom: %;
-  }
 
   footer h2 {
     margin-bottom: 3%;
@@ -189,11 +186,12 @@ font-size: 35px
   .logo {
     margin-left: 3%;
   }
+
   .nutt-gallery-text {
     font-weight: 300;
   }
-@media(hover: hover) and (pointer: fine) {
-  .nutt-gallery-text:hover {
+
+  @media(hover: hover) and (pointer: fine) {
+    .nutt-gallery-text:hover {}
   }
-}
 };
