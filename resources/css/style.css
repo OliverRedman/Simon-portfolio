@@ -211,7 +211,14 @@ h2 {
   margin: 0% 0% 0% 5%;
   line-height: 30px;
 }
+.about-writing a {
+  font-weight: 600;
+  color: #e06631;
+}
+.about-writing a:hover {
+  color: #c75b2d;
 
+}
 
 /* -----------PROJECTS SECTION------------------------ */
 .project-h2 {
@@ -406,16 +413,17 @@ footer h2 {
   padding-bottom: 20px;
 }
 .oliver p {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  font-size: 1.4rem;
 }
 .oliver a {
+  font-weight: 400;
+  color: #e06631;
+  font-size: 1.1rem;
   transition: color 0.3s ease 0s;
 
 }
-.oliver a:hover {
-  color: #ff0000;
 
-}
 /* -----------ANIMATIONS------------------------ */
 
 .js--wp-1 {
