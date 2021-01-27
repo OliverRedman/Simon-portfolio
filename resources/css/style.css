@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-h1, h3, h4 {
+h1,
+h3,
+h4 {
   max-width: 900px;
 }
 
@@ -15,40 +17,45 @@ h1, h3, h4 {
 html,
 body {
   background-color: #fff;
-  font-family: 'lato', 'Arial', 'sans-serif';
+  font-family: "lato", "Arial", "sans-serif";
   font-size: 110%;
   font-weight: 200;
   overflow-x: hidden;
 }
 
 .clearfix {
-  zoom: 1
+  zoom: 1;
 }
 
 .clearfix:after {
-  content: '.';
+  content: ".";
   clear: both;
   display: block;
   height: 0;
   visibility: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   word-spacing: 5px;
 }
 
 /* -----------HERO BACKGROUND------------------------ */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero1.jpg);
-   background-size: cover;
-   min-height: 100vh;
-   background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero1.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
-
 /* -----------NAV------------------------ */
-li, a, button {
-  font-family: 'Lato', 'Arial', 'sans-serif';
+li,
+a,
+button {
+  font-family: "Lato", "Arial", "sans-serif";
   font-size: 100%;
   font-weight: 300;
   color: #fff;
@@ -113,7 +120,6 @@ a {
 }
 /* -----------Sticky NAV------------------------ */
 
-
 .sticky {
   position: fixed;
   top: 0;
@@ -125,7 +131,7 @@ a {
   z-index: 9999;
 }
 .sticky li,
-.sticky .cta button{
+.sticky .cta button {
   color: #252525;
 }
 .sticky .nav__links {
@@ -136,9 +142,6 @@ a {
 .sticky .nav__links li {
   padding: 3% 18px;
 }
-
-
-
 
 /* -----------FRONT PAGE------------------------ */
 .main__intro {
@@ -159,7 +162,7 @@ h1 {
   font-size: 220%;
   color: #fff;
   font-weight: 300;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.1em;
   margin-top: 40%;
 }
 
@@ -194,14 +197,12 @@ h2 {
   object-fit: contain;
 }
 
-
 .about-content {
   display: flex;
   display: -webkit-flex;
   object-fit: contain;
   align-self: flex-start;
 }
-
 
 .about-writing p {
   font-size: 110%;
@@ -217,7 +218,6 @@ h2 {
 }
 .about-writing a:hover {
   color: #c75b2d;
-
 }
 
 /* -----------PROJECTS SECTION------------------------ */
@@ -232,12 +232,11 @@ h2 {
 }
 
 .image-grid {
-display: flex;
-width: 92%;
-flex-wrap: wrap;
-margin: 0 auto;
-position: relative;
-
+  display: flex;
+  width: 92%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
 }
 
 .grid-image img {
@@ -247,9 +246,7 @@ position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4%;
-
 }
-
 
 .title-projects {
   color: #1b1b1b;
@@ -267,51 +264,47 @@ position: relative;
 
 .project-grid {
   display: grid;
-grid-template-columns: auto auto auto auto;
-justify-content: center;
-padding-bottom: 50px;
-
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 .grid-text {
   height: 240px;
   width: 320px;
   position: absolute;
   margin-left: 2.5%;
-text-align:center;
+  text-align: center;
 }
 
-  .nutt-text {
-    position: absolute;
+.nutt-text {
+  position: absolute;
 
-    width: 320px;
-    height: 240px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    transition: opacity 0.6s;
-    vertical-align: middle;
-    line-height: 20px;
-    z-index: 999;
-    cursor: pointer;
-    padding-left: 8px;
-
-  }
-  .nutt-text h5 {
-    color: white;
-    display: inline-table;
-    vertical-align: middle;
-    line-height: 100%;
-    padding-bottom: 40px;
-    padding-top: 15px;
-    letter-spacing: 0.05em;
-
-
-  }
-  .nutt-text p {
-    color: white;
-    line-height:20px;
-    padding-bottom: 10px;
-  }
+  width: 320px;
+  height: 240px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.6s;
+  vertical-align: middle;
+  line-height: 20px;
+  z-index: 999;
+  cursor: pointer;
+  padding-left: 8px;
+}
+.nutt-text h5 {
+  color: white;
+  display: inline-table;
+  vertical-align: middle;
+  line-height: 100%;
+  padding-bottom: 40px;
+  padding-top: 15px;
+  letter-spacing: 0.05em;
+}
+.nutt-text p {
+  color: white;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
 .nutts,
 .image-grid {
   padding: 1%;
@@ -319,10 +312,10 @@ text-align:center;
   margin-right: auto;
   margin-bottom: 4%;
 }
-  .nutt-text:hover {
-    opacity: 1;
-  }
-  /* -----------PROJECT DESSCRIPTION PHONE------------------------ */
+.nutt-text:hover {
+  opacity: 1;
+}
+/* -----------PROJECT DESSCRIPTION PHONE------------------------ */
 
 .nutt-gallery-text {
   position: absolute;
@@ -347,13 +340,12 @@ text-align:center;
   padding-bottom: 15px;
   padding-top: 10px;
   letter-spacing: 0.05em;
-
 }
 .nutt-gallery-text p {
   color: white;
 }
 .nutt-gallery-text:hover {
-opacity: 1;
+  opacity: 1;
 }
 
 /* -----------CONTACT SECTION------------------------ */
@@ -378,9 +370,13 @@ footer h2 {
   margin: 3% 0 0 0;
   justify-content: center;
 }
+.email-end {
+  text-align: center;
+  margin-bottom: 3%;
+}
 
 .logo {
-  margin: 2% 1.5% 5% 1.5%;
+  margin: 2% 1.5% 1% 1.5%;
 }
 
 .instagram:hover {
@@ -396,7 +392,7 @@ footer h2 {
 }
 
 .email:hover {
-  color: #0072C6;
+  color: #0072c6;
 }
 
 .oliver {
@@ -414,7 +410,6 @@ footer h2 {
   color: #e06631;
   font-size: 1.1rem;
   transition: color 0.3s ease 0s;
-
 }
 
 /* -----------ANIMATIONS------------------------ */
@@ -427,49 +422,37 @@ footer h2 {
 }
 .js--project-1 {
   opacity: 0;
-
 }
 .js--project-1 .animated {
   opacity: 1;
-
 }
 .js--project-2 {
   opacity: 0;
-
 }
 .js--project-2 .animated {
   opacity: 1;
-
 }
 .js--project-3 {
   opacity: 0;
-
 }
 .js--project-3 .animated {
   opacity: 1;
-
 }
 .js--project-4 {
   opacity: 0;
-
 }
 .js--project-4 .animated {
   opacity: 1;
-
 }
 .js--project-5 {
   opacity: 0;
-
 }
 .js--project-5 .animated {
   opacity: 1;
-
 }
 .js--project-6 {
   opacity: 0;
-
 }
 .js--project-6 .animated {
   opacity: 1;
-
 }

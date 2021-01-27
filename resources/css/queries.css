@@ -4,7 +4,9 @@
     font-size: 300%;
   }
 
-  li, a, button {
+  li,
+  a,
+  button {
     font-size: 105%;
   }
 
@@ -26,22 +28,21 @@
     color: #464646;
   }
 
-
   .nutt-text p {
     font-weight: 300;
   }
 
   .oliver p {
     font-weight: 300;
-    font-size: 22px
+    font-size: 22px;
   }
 
   .contact-note {
-    font-size: 23px
+    font-size: 23px;
   }
 
   .socials ion-icon {
-    font-size: 35px
+    font-size: 35px;
   }
 }
 
@@ -67,12 +68,10 @@
     text-align: center;
     padding-right: 40px;
     padding-left: 0px;
-
   }
 }
 
 @media only screen and (max-width: 575px) and (min-width: 1px) {
-
   /* nav bar */
   .nav__links {
     display: none;
@@ -102,15 +101,16 @@
   }
 
   header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/simonphone1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(img/simonphone1.jpg);
   }
 
   /* about section */
   @supports (-webkit-touch-callout: inherit) {
-  header {
-  background-attachment: scroll;
+    header {
+      background-attachment: scroll;
+    }
   }
-}
   .about-content {
     display: block;
   }
@@ -147,7 +147,7 @@
   }
 
   .gallery {
-    background: #EEE;
+    background: #eee;
   }
 
   .gallery {
@@ -163,8 +163,6 @@
     counter-increment: gallery-cell;
     border: none;
   }
-
-  .cells img {}
 
   /* cell number */
   .gallery-cell:before {
@@ -197,8 +195,16 @@
   .nutt-gallery-text {
     font-weight: 300;
   }
-
-  @media(hover: hover) and (pointer: fine) {
-    .nutt-gallery-text:hover {}
+  .main__intro {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 20px;
   }
-};
+  .email-end {
+    margin-bottom: 7%;
+  }
+  @media (hover: hover) and (pointer: fine) {
+  }
+} ;
