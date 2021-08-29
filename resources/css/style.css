@@ -17,7 +17,7 @@ h4 {
 html,
 body {
   background-color: #fff;
-  font-family: "lato", "Arial", "sans-serif";
+  font-family: 'lato', 'Arial', 'sans-serif';
   font-size: 110%;
   font-weight: 200;
   overflow-x: hidden;
@@ -28,7 +28,7 @@ body {
 }
 
 .clearfix:after {
-  content: ".";
+  content: '.';
   clear: both;
   display: block;
   height: 0;
@@ -55,7 +55,7 @@ header {
 li,
 a,
 button {
-  font-family: "Lato", "Arial", "sans-serif";
+  font-family: 'Lato', 'Arial', 'sans-serif';
   font-size: 100%;
   font-weight: 300;
   color: #fff;
@@ -97,6 +97,10 @@ button {
   transition: background-color 0.2s ease 0s;
 }
 
+.sticky .cta button {
+  color: white;
+}
+
 .cta button:hover {
   background-color: #b54f23;
 }
@@ -130,8 +134,7 @@ a {
   box-shadow: 0 2px 2px #efefef;
   z-index: 9999;
 }
-.sticky li,
-.sticky .cta button {
+.sticky li {
   color: #252525;
 }
 .sticky .nav__links {
@@ -175,7 +178,7 @@ h2:after {
   display: block;
   height: 2px;
   background-color: #e06631;
-  content: "";
+  content: '';
   width: 100px;
   margin: auto;
   margin-top: 20px;
@@ -229,6 +232,7 @@ h2 {
 .projects-content {
   background-color: #f4f4f4;
   margin: 4% 0px 0% 0px;
+  padding-bottom: 10px;
 }
 
 .image-grid {
@@ -248,105 +252,62 @@ h2 {
   margin-bottom: 4%;
 }
 
-.title-projects {
-  color: #1b1b1b;
-  position: relative;
-}
-
-.gallery {
-  display: none;
-}
 .image {
   width: 320px;
   height: 240px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
+
+/* cell number */
+
 /* -----------PROJECT DESCRIPTION------------------------ */
 
-.project-grid {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
-  padding-bottom: 50px;
-}
-.grid-text {
-  height: 240px;
+.card-item {
+  display: flex;
+  flex-direction: column;
   width: 320px;
-  position: absolute;
-  margin-left: 2.5%;
-  text-align: center;
+  height: 490px;
+  background-color: white;
+  border-radius: 4px;
 }
-
-.nutt-text {
-  position: absolute;
-
+.card-item p {
+  margin-top: 20px;
+  padding: 0 20px 0 30px;
+  line-height: 24px;
+  font-weight: 300 !important;
+  color: #5f5f5f;
+}
+.card-item h4 {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 28px;
+  font-weight: 400;
+}
+html {
+  overflow-y: scroll;
+}
+.gallery {
+  margin: auto;
+  max-width: 92vw;
+  margin-bottom: 10px;
+}
+.carousel-cell {
   width: 320px;
-  height: 240px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transition: opacity 0.6s;
-  vertical-align: middle;
-  line-height: 20px;
-  z-index: 999;
-  cursor: pointer;
-  padding-left: 8px;
+  height: 490px;
+  margin-right: 40px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
 }
-.nutt-text h5 {
-  color: white;
-  display: inline-table;
-  vertical-align: middle;
-  line-height: 100%;
-  padding-bottom: 40px;
-  padding-top: 15px;
-  letter-spacing: 0.05em;
-}
-.nutt-text p {
-  color: white;
-  line-height: 20px;
-  padding-bottom: 10px;
-}
-.nutts,
-.image-grid {
-  padding: 1%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4%;
-}
-.nutt-text:hover {
-  opacity: 1;
+.flickity-page-dots {
+  position: relative !important;
+  bottom: 0px !important;
+  text-align: right !important;
+  padding-right: 20px !important;
+  padding-top: 20px !important;
 }
 /* -----------PROJECT DESSCRIPTION PHONE------------------------ */
-
-.nutt-gallery-text {
-  position: absolute;
-
-  width: 320px;
-  height: 240px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transition: opacity 0.6s;
-  vertical-align: middle;
-  line-height: 30px;
-  z-index: 999;
-  cursor: pointer;
-  padding-left: 8px;
-}
-.nutt-gallery-text h5 {
-  color: white;
-  display: inline-table;
-  vertical-align: middle;
-  line-height: 100%;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  letter-spacing: 0.05em;
-}
-.nutt-gallery-text p {
-  color: white;
-}
-.nutt-gallery-text:hover {
-  opacity: 1;
-}
 
 /* -----------CONTACT SECTION------------------------ */
 footer {
