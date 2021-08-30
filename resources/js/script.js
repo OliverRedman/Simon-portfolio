@@ -46,17 +46,10 @@ $(document).ready(function () {
   $('.js--project-1').waypoint(
     function (direction) {
       $('.js--project-1').addClass('animate__animated animate__fadeIn');
+      flky.playPlayer();
     },
     {
       offset: '50%',
-    }
-  );
-  $('.js--project-2').waypoint(
-    function (direction) {
-      $('.js--project-2').addClass('animate__animated animate__fadeIn');
-    },
-    {
-      offset: '75%',
     }
   );
 });
@@ -157,3 +150,4 @@ var flky = new Flickity('.gallery', {
 flky.on('dragEnd', function (event, pointer, cellElement, cellIndex) {
   flky.playPlayer();
 });
+flky.pausePlayer();
