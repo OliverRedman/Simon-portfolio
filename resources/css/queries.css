@@ -45,8 +45,13 @@
     font-size: 35px;
   }
 }
-
+.simon-about-mb {
+  display: none;
+}
 @media only screen and (max-width: 1250px) {
+  .main__title {
+    font-size: 24px;
+  }
   .nav__links {
     display: none;
   }
@@ -54,8 +59,10 @@
   .about-content {
     display: block;
   }
-
   .simon-about {
+    display: none;
+  }
+  .simon-about-mb {
     width: 25%;
     display: block;
     margin-left: auto;
@@ -72,6 +79,9 @@
 }
 
 @media only screen and (max-width: 575px) and (min-width: 1px) {
+  .simon-about {
+    display: none;
+  }
   /* nav bar */
   .nav__links {
     display: none;
@@ -101,8 +111,8 @@
   }
 
   header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(img/simonphone1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(img/mobileVer.jpeg);
   }
 
   /* about section */
@@ -115,7 +125,7 @@
     display: block;
   }
 
-  .simon-about {
+  .simon-about-mb {
     width: 45%;
     display: block;
     margin-left: auto;
