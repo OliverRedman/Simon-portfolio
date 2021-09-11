@@ -44,8 +44,8 @@ h4 {
 
 /* -----------HERO BACKGROUND------------------------ */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/hero1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(img/hero1.jpeg);
   background-size: cover;
   min-height: 100vh;
   background-attachment: fixed;
@@ -156,7 +156,7 @@ a {
 }
 
 .main__title {
-  font-size: 150%;
+  font-size: 140%;
   font-weight: 200;
   color: #fff;
 }
@@ -191,11 +191,17 @@ h2 {
   font-weight: 300;
   letter-spacing: 3px;
 }
-
-.simon-about {
+.simon-about-mb {
   width: 30%;
   height: 30%;
   border-radius: 400px;
+  margin: 0px 0px 20px 3%;
+  object-fit: contain;
+}
+.simon-about {
+  width: 30%;
+  height: 30%;
+  border-radius: 4px;
   margin: 0px 0px 20px 3%;
   object-fit: contain;
 }
