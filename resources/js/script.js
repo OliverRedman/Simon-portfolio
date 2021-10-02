@@ -73,7 +73,7 @@ var flky = new Flickity('.gallery', {
   adaptiveHeight: false,
   // set carousel height to the selected slide
 
-  autoPlay: 1600,
+  // autoPlay: 1600,
   pauseAutoPlayOnHover: false,
 
   // advances to the next cell
@@ -147,7 +147,7 @@ var flky = new Flickity('.gallery', {
   wrapAround: true,
   // at end of cells, wraps-around to first for infinite scrolling
 });
-flky.on('dragEnd', function (event, pointer, cellElement, cellIndex) {
-  flky.playPlayer();
-});
+// flky.on('dragEnd', function (event, pointer, cellElement, cellIndex) {
+//   flky.playPlayer();
+// });
 flky.pausePlayer();

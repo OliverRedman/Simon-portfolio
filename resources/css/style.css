@@ -236,9 +236,9 @@ h2 {
 }
 
 .projects-content {
-  background-color: #f4f4f4;
+  background-color: #eeeeee;
   margin: 4% 0px 0% 0px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .image-grid {
@@ -275,7 +275,6 @@ h2 {
   flex-direction: column;
   width: 320px;
   height: 490px;
-  background-color: white;
   border-radius: 4px;
 }
 .card-item p {
@@ -302,8 +301,7 @@ html {
 .carousel-cell {
   width: 320px;
   height: 490px;
-  margin-right: 40px;
-  background: #8c8;
+  margin-right: 20px;
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
@@ -314,7 +312,43 @@ html {
   padding-right: 20px !important;
   padding-top: 20px !important;
 }
-/* -----------PROJECT DESSCRIPTION PHONE------------------------ */
+/* -----------QUOTE SECTION ------------------------ */
+.quotes {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.quotes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: clamp(320px, 960px, 960px);
+}
+.quotes-container blockquote {
+  width: 320px;
+  height: 300px;
+  font-weight: 300;
+  padding: 2%;
+  position: relative;
+  font-style: italic;
+  line-height: 145%;
+  margin-bottom: 80px;
+}
+blockquote:before {
+  content: '\201C';
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.quotes-container blockquote cite {
+  display: block;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 400;
+}
 
 /* -----------CONTACT SECTION------------------------ */
 footer {
